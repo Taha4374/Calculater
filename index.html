@@ -7,49 +7,39 @@
     <title>CALCULATOR</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1 class="heading">CALCULATOR</h1>
-    <div class="container flex flex-col">
-        <form class="form">
-            <div class="button-input">
-                <div class="row">
-                    <input class="input" type="text" id="calculator-display">
-                </div>
-                <div id="all-button">
-                    <div class="row">
-                        <button class="button rowC">AC</button>
-                        <button class="button rowCC">C</button>
-                        <button class="button rowdot">.</button>
-                        <button class="button rowper">%</button>
-                    </div>
-                    <div class="row">
-                        <button class="button row7">7</button>
-                        <button class="button row8">8</button>
-                        <button class="button row9">9</button>
-                        <button class="button rowmulti">*</button>
-                    </div>
-                    <div class="row">
-                        <button class="button row4">4</button>
-                        <button class="button row5">5</button>
-                        <button class="button row6">6</button>
-                        <button class="button rowdiv">/</button>
-                    </div>
-                    <div class="row">
-                        <button class="button row1">1</button>
-                        <button class="button row2">2</button>
-                        <button class="button row3">3</button>
-                        <button class="button rowadd">+</button>
-                    </div>
-                    <div class="row">
-                        <button class="button row00">00</button>
-                        <button class="button row0">0</button>
-                        <button class="button rowequal">=</button>
-                        <button class="button rowsub">-</button>
-                    </div>
-                </div>
+    <h1>CALCULATOR</h1>
+
+    <form id="user">
+        <p id="input">
+            <input type="number" id="num1">
+            <br>
+            <input type="number" id="num2">
+        </p>
+        <div class="container">
+            <div id="container">
+                <button type="submit" id="add-btn">ADD</button>
+                <br>
+                <button type="submit" id="sub-btn">SUB</button>
             </div>
-        </form>
-    </div>
+
+            <div id="contain">
+                <br>
+                <button type="submit" id="div-btn">DIV</button>
+                <br>
+                <button type="submit" id="multi-btn">MULTI</button>
+            </div>
+
+            <div id="cont">
+                <button type="button" id="clear-btn">clear</button>
+            </div>
+        </div>
+    </form>
+
+    <h1 id="result"></h1>
+
     <script src="./backend.js"></script>
 </body>
+
 </html>
